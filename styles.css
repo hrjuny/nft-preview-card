@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--main-bg);
+    font-family: 'Outfit', sans-serif;
+}
+
+h1 {
+    color: var(--white);
+    transition: 0.15s;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+h1:hover {
+    color: var(--cyan);
+}
+
+p {
+    color: var(--soft-blue);
+    font-size: 16px;
+}
+
+span {
+    color: var(--soft-blue);
+}
+
+
+.card {
+    background-color: var(--card-bg);
+    width: 329px;
+    padding: 24px;
+    border-radius: 16px;
+}
+
+.card-product {
+    position: relative;
+    cursor: pointer;
+    border-radius: .6rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.card-product img {
+    width: 100%;
+    transition: 0.15s ease;
+    cursor: pointer;
+    display: block;
+}
+
+.card-product img:hover {
+    content: url(images/icon-view.svg);
+    background-color: hsl(178, 100%, 50%);
+}
+
+.card-information {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ethereum-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+}
+
+.ethereum-container span {
+    color: var(--cyan);    
+}
+
+.ethereum-container img {
+    width: 12px;
+}
+
+.time-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--soft-blue);  
+    font-weight: 400;  
+}
+
+.time-container img {
+    width: 18px;
+}
+
+
+
+.card-creator {
+    margin: 24px 0 0 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    
+}
+
+.card-creator img {
+    width: 24px;
+}
+
+
+.creator-name {
+    color: var(--white);
+    transition: 0.15s;
+    cursor: pointer;
+}
+
+.creator-name:hover {
+    color: var(--cyan);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: white;
+    margin-top: 16px;
+}
+
+.attribution a { 
+    color: var(--cyan); 
+}
