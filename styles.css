@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 :root {
@@ -22,11 +24,15 @@ body {
     font-family: 'Outfit', sans-serif;
 }
 
+.card-details {
+    padding-top: 1.5rem;
+}
 h1 {
     color: var(--white);
     transition: 0.15s;
     cursor: pointer;
     font-size: 24px;
+    margin-bottom: 16px;
 }
 
 h1:hover {
@@ -35,7 +41,9 @@ h1:hover {
 
 p {
     color: var(--soft-blue);
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 1.8rem;
+    margin-bottom: 0.8rem;
 }
 
 span {
@@ -58,6 +66,20 @@ span {
     cursor: pointer;
 }
 
+.card-product {
+    background-image: url(images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 55%;
+    background-color: hsl(178deg, 100%, 50%);    
+    /* border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem; */
+    overflow: hidden;
+}
+
 .card-product img {
     width: 100%;
     transition: 0.15s ease;
@@ -66,13 +88,16 @@ span {
 }
 
 .card-product img:hover {
-    content: url(images/icon-view.svg);
-    background-color: hsl(178, 100%, 50%);
+    /* content: url(images/icon-view.svg); */
+    /* background-color: hsl(178, 100%, 50%); */
+    opacity: 0.5;
 }
 
 .card-information {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;    
+    border-bottom: 1px solid hsl(215deg, 32%, 27%);
+    padding-bottom: 0.8rem; 
 }
 
 .ethereum-container {
@@ -95,7 +120,8 @@ span {
     align-items: center;
     gap: 8px;
     color: var(--soft-blue);  
-    font-weight: 400;  
+    font-weight: 400;
+ 
 }
 
 .time-container img {
@@ -105,7 +131,8 @@ span {
 
 
 .card-creator {
-    margin: 24px 0 0 0;
+    /* margin: 24px 0 0 0; */
+    padding-top: 0.8rem;
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -113,7 +140,9 @@ span {
 }
 
 .card-creator img {
-    width: 24px;
+    width: 30px;
+    border-radius: 50%;
+    border: solid 1px var(--white);
 }
 
 
